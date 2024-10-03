@@ -1,0 +1,25 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
+import Login from "./Login";
+import { Hello } from "./Hello";
+import Car from "./Car";
+
+function Router() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<App />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/hello" element={<Hello />} />
+                <Route path="/car" element={<Car />} />
+                <Route
+                    path="*"
+                    element={<h1>Không tìm thấy trang web theo yêu cầu</h1>}
+                />
+            </Routes>
+        </BrowserRouter>
+    );
+}
+
+export default Router;

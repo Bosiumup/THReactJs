@@ -1,9 +1,10 @@
 import React from "react";
-import { Hello, HelloPerson } from "./Hello";
-import Header from "./Header";
-import HelloBinhMinh from "./HelloBinhMinh";
-import Car from "./Car";
-import Login from "./Login";
+import { Hello, HelloPerson } from "./components/Hello";
+import Header from "./containers/Header";
+import HelloBinhMinh from "./components/HelloBinhMinh";
+import Car from "./components/Car";
+import Login from "./containers/Login";
+import Menu from "./components/Menu";
 function App() {
     return (
         <div>
@@ -13,6 +14,7 @@ function App() {
             <HelloBinhMinh />
             <HelloPerson name="Lý Ngọc Minh Thiện" />
             <Car />
+            <Menu />
         </div>
     );
 }
